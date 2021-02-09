@@ -1,0 +1,80 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tela Cadastro de Pessoas</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/estilo.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/loader.css' %}">
+
+</head>
+
+<!-- LOADER -->
+
+<!--
+<div id="loader"></div>
+<div style="display:none;" id="divprincipal" class="animate-bottom"></div>
+-->
+<body>
+    <div class="form-wrapper">
+    <form class="formulario" method="post">
+        <p> Envie uma mensagem preenchendo o formulário abaixo</p>
+        {% csrf_token %}
+       <!--
+        <div class="field">
+            <label for="nome">Seu Nome:</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome*" required>
+        </div>
+
+        <div class="field">
+            <label for="nome">Seu sobrenome:</label>
+            <input type="text" id="sobrenome" name="sobrenome" placeholder="Digite seu sobrenome *" required>
+        </div>
+
+
+        <div class="field">
+            <label for="data_nascimento">Sua data de nascimento:</label>
+            <input type="date" id="data_nascimento" name="telefone" placeholder="Digite sua data de nascimento*" required>
+        </div>
+
+        <div class="field">
+            <label for="idade">Sua idade:</label>
+            <input type="text" id="idade" name="idade" placeholder="Sua idade é*" required disabled>
+        </div>
+
+        <div class="field">
+            <label for="email">Seu E-Mail:</label>
+            <input type="email" id="email" name="email" placeholder="Digite seu E-Mail*" required>
+        </div>
+        <div class="field">
+            <label for="email">Apelido:</label>
+            <input type="text" id="apelido" name="apelido" placeholder="Digite seu apelido">
+        </div>
+        <div class="field">
+            <label for="observacao">Observacao</label>
+            <textarea name="observacao" id="observacao" placeholder="Digite sua observacao"></textarea>
+        </div> -->
+
+
+        {{ form }}
+
+        <button type="submit" name="btn_salvar">Cadastrar</button>
+    </form>
+        </div>
+</body>
+
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+
+
+<script src="{% static 'js/loader.js' %}"></script>
+
+<!-- jQuery library -->
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</html>

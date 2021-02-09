@@ -1,0 +1,70 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdn.datatables.net/1.10.23/css/dataTables.bootstrap4.min.css">
+<link rel="stylesheet" href="https://cdn.datatables.net/1.10.23/css/jquery.dataTables.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/fontawesome.min.css"/>
+<head>
+    <meta charset="UTF-8">
+    <title>Pessoas Cadastradas</title>
+</head>
+<body>
+    <h1 style="text-align: center;">Cadastro de pessoas</h1><br><br>
+    <table id="esoft" class="display" style="width:100%">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Sobrenome</th>
+                <th>Idade</th>
+                <th>Data de Nascimento</th>
+                <th>E-mail</th>
+                <th>Apelido</th>
+                <th>Observação</th>
+                <th>Ação</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Nome teste</td>
+                <td>Sobrenome teste</td>
+                <td>Idade Teste</td>
+                <td>Nascimento Teste</td>
+                <td>Email Teste</td>
+                <td>Apelido Teste</td>
+                <td>Observação Teste</td>
+                <td>Atualize<i class="fas fa-sync"></i> |Delete <i class="far fa-trash-alt"></i> </td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>Nome</th>
+                <th>Sobrenome</th>
+                <th>Idade</th>
+                <th>Data de Nascimento</th>
+                <th>E-mail</th>
+                <th>Apelido</th>
+                <th>Observação</th>
+                <th>Ação</th>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+
+<script>
+$(document).ready(function() {
+    $('#esoft').DataTable();
+});
+</script>
+
+<script src="https://cdn.datatables.net/1.10.23/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.23/js/dataTables.bootstrap4.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+
+    <!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/js/fontawesome.min.js"></script>
+</html>
