@@ -1,5 +1,6 @@
 # Projeto Django
 
-Olá Esoft, deixo aqui o meu aviso que infelizmente eu não consegui concluir tudo, acredito que tive bem próximo de terminar.. Algumas coisas eu tive muita dificuldade por ser bem novo no Django, porém foi um grande aprendizado pra mim e fico muito feliz pela oportunidade e pelo contato feito.
+Olá Esoft, fico feliz por ter me aberto as portas para uma grande oportunidade, foi uma grande quebra cabeça por ter mexido pouco com o Django, porém foi um grande aprendizado pra mim e fico super satisfeito por todo o incentivo e esforço que tive, independente do resultado.
 
 Um grande abraço a todos, e sucessos!
+
